@@ -1,7 +1,6 @@
 #!/usr/bin/ruby
 # Create display override file to force Mac OS X to use RGB mode for Display
 # see http://embdev.net/topic/284710
-
 require 'base64'
 
 data=`ioreg -l -d0 -w 0 -r -c AppleDisplay`
@@ -64,4 +63,4 @@ f.write "
 </plist>"
 f.close
 puts "\n"
-end		# displays.each
+end   # displays.each
